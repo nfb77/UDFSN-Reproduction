@@ -1,0 +1,16 @@
+"GEOID","NAME","year","category","estimate","moe"
+"US","United States",2000,"National",111800,NA
+"US","United States",2009,"National",185400,201
+"US","United States",2010,"National",188400,184
+"US","United States",2011,"National",186200,156
+"US","United States",2012,"National",181400,169
+"US","United States",2013,"National",176700,198
+"US","United States",2014,"National",175700,224
+"US","United States",2015,"National",178600,133
+"US","United States",2016,"National",184700,160
+"US","United States",2017,"National",193500,156
+"US","United States",2018,"National",204900,173
+"US","United States",2019,"National",217500,180
+"US","United States",2020,"National",229800,188
+"US","United States",2021,"National",244900,316
+"US","United States",2022,"National",281900,221
