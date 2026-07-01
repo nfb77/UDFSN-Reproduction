@@ -22,12 +22,29 @@ library(lubridate)
 
 ```
 
+# Introduction
 
+The following is R code used to replicate visualizations related to the manuscript entitled "Upzoning, Density, and the Financialization of Space in Nashville" by Nicholas Forster-Benson.
 
+# Data Sourcing
 
-# Load Rent Data
+NDP (2025). Annual residential report 2025. Technical report, Nashville Downtown Partnership. <https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf>.
 
-```{r}
+U.S. Census Bureau (2000a). 2000 census tract and block numbering area definitions. Census tracts 146-147 (FIPS: 47037014600, 47037014700) and adjacent tracts in Davidson County, TN.
+
+U.S. Census Bureau (2000b). Census 2000 summary file 3 (sf3): Median gross rent and median home value. Tables H063001 (Median Gross Rent) and H085001 (Median Home Value); Table P053001 (Median Household Income in 1999).
+
+U.S. Census Bureau (2010). 2010 census tract and block numbering area definitions. Census tract 195 (FIPS: 47037019500) and adjacent tracts in Davidson County, TN.
+
+U.S. Census Bureau (2022). American community survey 5-year estimates (2005-2022). Table B25064 (Median Gross Rent); Table B25077 (Median Value - Owner-Occupied Housing Units); Table B19013 (Median Household Income in the Past 12 Months).
+
+U.S. Department of Housing and Urban Development (2023). American housing survey: Rental housing trends. HUD User. National median rent trends used for comparison baseline.
+
+# Plots and Figures
+
+*Loading Rent Data* (see `UDFSN Reproduction.Rmd` for code)
+
+```{r, echo=FALSE}
 
 # ─── Import Data ──────────────────────────────────
 
@@ -79,12 +96,9 @@ rent_plot_data$series <- factor(rent_plot_data$series, levels = c(
 
 ```
 
+*Plotting Rent Data*
 
-
-
-
-# Rent Plot
-```{r}
+```{r, echo=FALSE}
 # ─── PLOT ────────────────────────────────────────────────────────────────────
 
   p <- ggplot(rent_plot_data, aes(x = year, y = estimate,
@@ -142,12 +156,14 @@ p
 
 # ───  Save ──────────────────────────────────
 
-output_path <- "figures/nashville_rent_2000_2022.png"
-ggsave(output_path, dpi = 600)
+#output_path <- "figures/nashville_rent_2000_2022.png"
+#ggsave(output_path, dpi = 600)
 
+```
 
+Adding data for 2025 sourced from NDP (2025). Annual residential report 2025. Technical report, Nashville Downtown Partnership. <https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf>. 
 
-
+```{r, echo=FALSE}
 # ───  With 2025 Data  ──────────────────────────────────
 
 
@@ -230,27 +246,16 @@ p
 
 # ───  Save ──────────────────────────────────
 
-output_path <- "figures/nashville_rent_2000_2025.png"
-ggsave(output_path, dpi = 600)
+#output_path <- "figures/nashville_rent_2000_2025.png"
+#ggsave(output_path, dpi = 600)
 
 
 
 ```
-    title = "Median Gross Rent: Nashville Core CBD vs. Adjacent Tracts (2000–2022)",
-    subtitle = "Census 2000 SF3 + ACS 5-Year Estimates (Table B25064) · Davidson County, TN",
 
-    caption = paste0(
-    2025 CBD from Annual Resifential Report
-      "Sources: Census 2000 SF3 (H063), ACS 5-Year estimates 2005-2009 through 2018-2022 (B25064).\n",
-      "Core CBD: Census 2000 (tracts 146, 147), Census 2010 (tract 195), Census 2020 (tracts 195.02, 195.03).\n",
-      "Adjacent tracts within 2km of core CBD. Tract boundaries change at vertical dotted lines.\n",
-      "Shaded bands = ACS margins of error (90% CI). Hollow points = Census 2000 (no MOE). Retrieved ", Sys.Date(), "."
-    
-    
+*Loading Home Price Data*  (see `UDFSN Reproduction.Rmd` for code)
 
-# Load Price Data 
-
-```{r}
+```{r, echo=FALSE}
 # ─── Import Data ──────────────────────────────────
 
 nash_price <- read.csv("data/nashville_cbd_tract_price_2000_2022.csv")
@@ -298,9 +303,9 @@ price_plot_data$series <- factor(price_plot_data$series, levels = c(
 
 ```
 
-# Plot Price 
+*Ploting Home Price Data*
 
-```{r}
+```{r, echo=FALSE}
 
 # ─── PLOT ────────────────────────────────────────────────────────────────────
 
@@ -357,36 +362,14 @@ p
 
 # ───  Save ──────────────────────────────────
 
-output_path <- "figures/nashville_home_price_2000_2022.png"
-ggsave(output_path, dpi = 600)
+#output_path <- "figures/nashville_home_price_2000_2022.png"
+#ggsave(output_path, dpi = 600)
 
 ```
 
-     title = "Median Home Value: Nashville Core CBD vs. Adjacent Tracts (2000–2022)",
-    subtitle = "Census 2000 SF3 + ACS 5-Year Estimates (Table B25077) · Davidson County, TN",
-    
-    caption = paste0(
-      "Sources: Census 2000 SF3 (H085), ACS 5-Year estimates 2005-2009 through 2018-2022 (B25077).\n",
-      "⚠️ NOTE: This is SELF-REPORTED median value of owner-occupied units, NOT actual sale prices.\n",
-      "Core CBD: Census 2000 (tracts 146, 147), Census 2010 (tract 195), Census 2020 (tracts 195.02, 195.03).\n",
-      "Adjacent tracts within 2km of core CBD. Tract boundaries change at vertical dotted lines.\n",
-      "Shaded bands = ACS margins of error (90% CI). Hollow points = Census 2000 (no MOE). Retrieved ", Sys.Date(), "."
-    )
+*Loading Income Data*  (see `UDFSN Reproduction.Rmd` for code)
 
-
-
-
-
-
-
-
-
-
-
-
-# Load Income Data
-
-```{r}
+```{r, echo=FALSE}
 # ─── Load Data ──────────────────────────────────
 
 nash_income <- read.csv("data/nashville_cbd_tract_income_2000_2022.csv")
@@ -432,9 +415,9 @@ income_plot_data$series <- factor(income_plot_data$series, levels = c(
 ))
 ```
 
-# Income Plot
+*Plotting Income Data* 
 
-```{r}
+```{r, echo=FALSE}
 
 # ─── PLOT ────────────────────────────────────────────────────────────────────
 
@@ -492,24 +475,14 @@ p
 
 # ───  Save ──────────────────────────────────
 
-output_path <- "figures/nashville_income_price_2000_2022.png"
-ggsave(output_path, dpi = 600)
+#output_path <- "figures/nashville_income_price_2000_2022.png"
+#ggsave(output_path, dpi = 600)
 
 ```
-    title = "Median Household Income: Nashville Core CBD vs. Adjacent Tracts (2000–2022)",
-    subtitle = "Census 2000 SF3 + ACS 5-Year Estimates (Table B19013) · Davidson County, TN",
-    caption = paste0(
-      "Sources: Census 2000 SF3 (P053 - income in 1999), ACS 5-Year estimates 2005-2009 through 2018-2022 (B19013).\n",
-      "Core CBD: Census 2000 (tracts 146, 147), Census 2010 (tract 195), Census 2020 (tracts 195.02, 195.03).\n",
-      "Adjacent tracts within 2km of core CBD. Tract boundaries change at vertical dotted lines.\n",
-      "ACS values are inflation-adjusted to survey year dollars. Shaded bands = ACS margins of error (90% CI).\n",
-      "Hollow points = Census 2000 (no MOE). Retrieved ", Sys.Date(), "."
-    )
 
+*Plotting DTC Population 2001-2025*
 
-# DTC Population over time
-Data Sourced from NDP (2025). Annual residential report 2025. Technical report, Nashville Downtown Partnership. [https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf] (https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf).
-```{r}
+```{r, echo=FALSE}
 
 downtown_pop <- tibble(
   Year = c(2001, 2009, 2014, 2020, 2025),
@@ -536,8 +509,6 @@ p <- ggplot(downtown_pop, aes(x = Year, y = Population)) +
 p
 
 
-output_path <- "figures/downtown_pop.png"
-ggsave(output_path, dpi = 600)
+#output_path <- "figures/downtown_pop.png"
+#ggsave(output_path, dpi = 600)
 ```
-
-
