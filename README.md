@@ -8,7 +8,7 @@ This repository contains the replication code and accompanying datasets used to 
 ## File Information
 - **Rmd file:** `UDFSN Reproduction.Rmd`
 - **Data file:** `nashville_cbd_tract_rent_2000_2022.csv`, `nashville_cbd_tract_price_2000_2022.csv`, `nashville_cbd_tract_income_2000_2022.csv`, `US_rent_2000_2022.csv`, `US_price_2000_2022.csv`, `US_income_2000_2022.csv`
-- **Output:** [View PDF document](<UDFSN Reproduction.pdf>)
+- **Output:** [View PDF document](<UDFSN-Reproduction.pdf>)
 
 ---
 
