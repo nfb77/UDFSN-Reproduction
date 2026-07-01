@@ -124,16 +124,6 @@ install.packages(c(
 ---
 
 
-
-# Geographic Definitions
-
-The analysis focuses on downtown Nashville using Census tract definitions corresponding to the central business district (CBD).
-
-Comparison areas consist of immediately adjacent census tracts, allowing the manuscript to contrast changes within the upzoned downtown against nearby neighborhoods over time.
-
----
-
-
 # Contact
 
 
