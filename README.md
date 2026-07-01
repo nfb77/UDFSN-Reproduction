@@ -2,7 +2,7 @@
 
 This repository contains the replication code and accompanying datasets used to produce the descriptive figures presented in the manuscript:
 
-> **Forster-Benson, Nicholas.** *Upzoning, Density, and the Financialization of Space in Nashville.*
+ **Forster-Benson, Nicholas.** *Upzoning, Density, and the Financialization of Space in Nashville.*
 
 ---
 ## File Information
