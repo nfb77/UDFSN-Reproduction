@@ -6,15 +6,8 @@ This repository contains the replication code and accompanying datasets used to 
 
 ---
 ## File Information
-- **Data file names:** `df_indexed_rent.csv`,`growth_df_adj.csv`,`master_df.csv`,`vacancy_growth_df.csv`,`pop_growth.csv`
-- **Rmd file name:** `UDFSN Reproduction.Rmd`
-- **Data file names:**
-│   ├── nashville_cbd_tract_rent_2000_2022.csv
-│   ├── nashville_cbd_tract_price_2000_2022.csv
-│   ├── nashville_cbd_tract_income_2000_2022.csv
-│   ├── US_rent_2000_2022.csv
-│   ├── US_price_2000_2022.csv
-│   └── US_income_2000_2022.csv
+- **Rmd file:** `UDFSN Reproduction.Rmd`
+- **Data file:** `nashville_cbd_tract_rent_2000_2022.csv`, `nashville_cbd_tract_price_2000_2022.csv`, `nashville_cbd_tract_income_2000_2022.csv`, `US_rent_2000_2022.csv`, `US_price_2000_2022.csv`, `US_income_2000_2022.csv`
 - **Output:** [View PDF document](UDFSN Reproduction.pdf)
 
 ---
