@@ -173,6 +173,6 @@ install.packages(c(
 # Contact
 
 
-Email: <mailto:nforstebenson@g.harvard.edu>
+Email: <a href="mailto:nforsterbenson@fas.harvard.edu">nforsterbenson@fas.harvard.edu</a>
 
 ---
