@@ -128,7 +128,6 @@ Because Census tract boundaries were redrawn in 2010 and again in 2020, separate
 
 113, 117, 118, 119, 121, 122, 126, 127.02, 134, 135, 136, 137.01, 137.02, 138, 139, 142, 143, 144, 159, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 192, 193, 194.01, 194.02, 195.01, and 196.
 
-**Note.** The comparison group is based on a fixed **3-kilometer proximity rule** rather than administrative neighborhood boundaries. Following each decennial Census, tract identifiers were updated to reflect changes in Census geography while maintaining a comparable geographic study area surrounding downtown Nashville.
 ---
 # Software Requirements
 
