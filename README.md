@@ -71,11 +71,14 @@ Tables used include:
 
 ### Nashville Downtown Partnership
 
-Nashville Downtown Partnership (2025).
+NDP (2008). Annual residential report 2008. Technical report, Nashville Downtown Part-
+nership. <https://ctycms.com/tn-nashville/docs/residential_report_2008.pdf>.
 
-*Annual Residential Report 2025.*
+NDP (2025). Annual residential report 2025. Technical report, Nashville Downtown Partnership. <https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf>.
 
-Used to extend downtown rent and population estimates through 2025.
+Used for all population estimates.
+
+Used to extend downtown rent estimates through 2025.
 
 ### U.S. Department of Housing and Urban Development (HUD)
 
