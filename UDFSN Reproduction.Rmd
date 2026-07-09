@@ -28,6 +28,10 @@ The following is R code used to replicate visualizations related to the manuscri
 
 # Data Sourcing
 
+NDP (2008). Annual residential report 2008. Technical report, Nashville Downtown Part-
+nership. <https://ctycms.com/tn-nashville/docs/residential_report_2008.pdf>.
+
+
 NDP (2025). Annual residential report 2025. Technical report, Nashville Downtown Partnership. <https://ctycms.com/tn-nashville/docs/2025-residential-report-1.pdf>.
 
 U.S. Census Bureau (2000a). 2000 census tract and block numbering area definitions. Census tracts 146-147 (FIPS: 47037014600, 47037014700) and adjacent tracts in Davidson County, TN.
